@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Ferretería Los Maestros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Ferretería Los Maestros</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" class="activo">Catálogo</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+        <p id="usuarioNav" class="usuario-nav"></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Catálogo de productos</h2>
+            <p>Encuentra materiales y productos para tus proyectos.</p>
+        </section>
+
+        <section class="filtros">
+            <h2>Filtrar productos</h2>
+            <div class="filtros-controles">
+                <div>
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria">
+                        <option value="todas">Todas</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="precio">Precio máximo (CLP):</label>
+                    <input type="number" id="precio" placeholder="Ej: 10000" min="0">
+                </div>
+                <div class="filtros-botones">
+                    <button type="button" id="filtrar" class="btn btn-principal">Filtrar</button>
+                    <button type="button" id="limpiar" class="btn btn-secundario">Limpiar filtros</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Productos</h2>
+            <div id="productos" class="grid-productos">
+                <!-- Se llenan con JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ferretería Los Maestros</p>
+        <p>Equipo: Deland Cabello y Josefa Sánchez</p>
+        <p>DSY1104 – 2026</p>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/catalogo.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

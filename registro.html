@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Ferretería Los Maestros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Ferretería Los Maestros</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="registro.html" class="activo">Registrarse</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Registro de usuario</h2>
+            <p>Completa el formulario para crear tu cuenta. Solo correos @duoc.cl.</p>
+
+            <div id="errores" class="errores" style="display:none;"></div>
+
+            <form id="formRegistro">
+                <div class="form-row">
+                    <div>
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido *</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                </div>
+
+                <label for="fechaNacimiento">Fecha de nacimiento *</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+                <label for="correo">Correo electrónico (@duoc.cl) *</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@duoc.cl" required>
+
+                <div class="form-row">
+                    <div>
+                        <label for="password">Contraseña *</label>
+                        <input type="password" id="password" name="password" required>
+                        <small>Mínimo 8 caracteres, 1 mayúscula y 1 número</small>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirmar contraseña *</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </div>
+
+                <label for="direccion">Dirección *</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="region">Región *</label>
+                <select id="region" name="region" required>
+                    <option value="">Seleccione una región</option>
+                </select>
+
+                <fieldset>
+                    <legend>Género *</legend>
+                    <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+                    <label><input type="radio" name="genero" value="Femenino"> Femenino</label>
+                    <label><input type="radio" name="genero" value="Otro"> Otro</label>
+                    <label><input type="radio" name="genero" value="Prefiero no decir"> Prefiero no decir</label>
+                </fieldset>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="terminos" name="terminos">
+                    Acepto los términos y condiciones del registro *
+                </label>
+
+                <button type="submit" class="btn btn-principal">Registrarse</button>
+            </form>
+
+            <p class="link-secundario">¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ferretería Los Maestros</p>
+        <p>Equipo: Deland Cabello y Josefa Sánchez</p>
+        <p>DSY1104 – 2026</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+</html>
