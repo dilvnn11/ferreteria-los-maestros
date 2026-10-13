@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería Los Maestros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Ferretería Los Maestros</h1>
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+        <p id="usuarioNav" class="usuario-nav"></p>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <h2>Ferretería Los Maestros</h2>
+            <p>Todo lo que necesitas para tus proyectos de construcción, reparación y mantenimiento.</p>
+            <a href="catalogo.html" class="btn btn-principal">Ver catálogo</a>
+        </section>
+
+        <section>
+            <h2>Productos destacados</h2>
+            <div id="productosDestacados" class="grid-productos">
+                <!-- Se llenan con JS -->
+            </div>
+        </section>
+
+        <section>
+            <h2>Quiénes somos</h2>
+            <p>
+                Ferretería Los Maestros es un negocio familiar ubicado en La Serena,
+                Región de Coquimbo, con más de 20 años de trayectoria.
+            </p>
+            <p>
+                Nos especializamos en materiales de construcción, herramientas,
+                gasfitería, electricidad y artículos de ferretería general.
+                Atendemos tanto a particulares como a contratistas y maestros de obra.
+            </p>
+            <p>
+                <strong>Equipo del proyecto:</strong> Deland Cabello y Josefa Sánchez.
+                Este e-commerce se desarrolla como parte del curso DSY1104 – Desarrollo FullStack II.
+            </p>
+        </section>
+
+        
+        <section>
+            <h2>Contáctanos</h2>
+            <form id="formContacto">
+                <label for="nombreContacto">Nombre:</label>
+                <input type="text" id="nombreContacto" name="nombre" required>
+
+                <label for="correoContacto">Correo:</label>
+                <input type="email" id="correoContacto" name="correo" required>
+
+                <label for="mensajeContacto">Mensaje:</label>
+                <textarea id="mensajeContacto" name="mensaje" required></textarea>
+
+                <button type="submit" class="btn btn-principal">Enviar consulta</button>
+            </form>
+        </section>
+
+        <
+        <section>
+            <h2>Ubicación</h2>
+            <p>Visítanos en La Serena, Región de Coquimbo.</p>
+            <iframe
+                src="https://www.google.com/maps?q=La%20Serena%2C%20Chile&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                loading="lazy"
+                title="Mapa Ferretería Los Maestros">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ferretería Los Maestros</p>
+        <p>Equipo: Deland Cabello y Josefa Sánchez</p>
+        <p>DSY1104 – 2026</p>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
